@@ -9,4 +9,4 @@ class Let(Special):
 
     def print(self, t, n, p):
         # TODO: Implement this function.
-        pass
+        self.printBeginStyle(t, n, p)

@@ -9,4 +9,4 @@ class Lambda(Special):
 
     def print(self, t, n, p):
         # TODO: Implement this function.
-        pass
+        self.printIfStyle(t, n, p)

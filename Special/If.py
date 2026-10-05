@@ -7,6 +7,6 @@ class If(Special):
     def __init__(self):
         pass
 
-    def print(self, t, n, p):
+    def print(self, t, n, p=False):
         # TODO: Implement this function.
-        pass
+        self.printIfStyle(t, n, p)

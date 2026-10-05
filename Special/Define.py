@@ -7,6 +7,10 @@ class Define(Special):
     def __init__(self):
         pass
 
-    def print(self, t, n, p):
-        # TODO: Implement this function.
-        pass
+    def print(self, t, n, p=False):
+        cdr = t.getCdr()
+
+        if cdr.isPair() and cdr.getCar().isPair():
+            self.printIfStyle(t, n, p)
+        else:
+            self.printRegularStyle(t, n, p)

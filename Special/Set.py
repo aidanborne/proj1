@@ -9,5 +9,5 @@ class Set(Special):
     
     def print(self, t, n, p):
         # TODO: Implement this function.
-        pass
+        self.printRegularStyle(t, n, p)
 
