@@ -22,7 +22,40 @@ class Cons(Node):
     def parseList(self):
         # TODO: implement this function and any helper functions
         # you might need
-        self.form = Regular()
+        car = self.car
+
+        if not car.isSymbol():
+            self.form = Regular()
+            return
+
+        ident = car.name
+
+        if ident == "begin":
+            self.form = Begin()
+
+        elif ident == "cond":
+            self.form = Cond()
+
+        elif ident == "define":
+            self.form = Define()
+
+        elif ident == "if":
+            self.form = If()
+
+        elif ident == "lambda":
+            self.form = Lambda()
+
+        elif ident == "let":
+            self.form = Let()
+
+        elif ident == "quote":
+            self.form = Quote()
+
+        elif ident == "set!":
+            self.form = Set()
+
+        else:
+            self.form = Regular()
 
     def print(self, n, p=False):
         self.form.print(self, n, p)
