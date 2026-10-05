@@ -9,8 +9,9 @@ class Begin(Special):
 
     def print(self, t, n, p):
         # TODO: Implement this function.
-        self.printBeginStyle(t, n, p)
         nil = Nil.getInstance()
+        self.printIfStyle(t, n, p)
+        self.printBeginStyle(t, n, p)
 
         if t == nil:
             t.print(n, p)
@@ -44,4 +45,3 @@ class Begin(Special):
 
                 print(")", end="")
                 break      
-        self.printIfStyle(t, n, p)  

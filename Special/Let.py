@@ -9,11 +9,8 @@ class Let(Special):
 
     def print(self, t, n, p):
         # TODO: Implement this function.
-<<<<<<< HEAD
         nil = Nil.getInstance()
-=======
         self.printBeginStyle(t, n, p)
->>>>>>> ea405699e0755c9cfb0705eaf943b28a5780d461
 
         if t == nil:
             t.print(n, p)

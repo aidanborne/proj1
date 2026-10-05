@@ -11,6 +11,7 @@ class Cond(Special):
         # TODO: Implement this function.
         nil = Nil.getInstance()
         self.printIfStyle(t, n, p)
+        self.printCondStyle(t, n, p)
 
         if t == nil:
             t.print(n, p)
@@ -44,3 +45,4 @@ class Cond(Special):
 
                 print(")", end="")
                 break        
+            
