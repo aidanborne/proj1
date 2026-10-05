@@ -11,9 +11,11 @@ class Quote(Special):
 
     def print(self, t, n, p):
         # TODO: Implement this function.
+
+        nil = Nil.getInstance()
         for _ in range(n):
             sys.stdout.write(" ")
         
         sys.stdout.write("'")
-
+  
         self.printRegularStyle(t.getCdr(), 0, False)
